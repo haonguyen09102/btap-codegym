@@ -1,0 +1,56 @@
+.box{
+    height: 300px;
+    width: 565px;
+    background-color:azure;
+    margin: auto;
+}
+.box1{
+    height: 20px;
+    width: 550px;
+    background-color: orange;
+    color: white;
+    text-align: center;
+    margin:auto;
+    margin-top: -13px;
+    
+}
+.name{
+    color: blue;
+    margin-left: -280px;
+}
+.email{
+    color: blue;
+    margin-left: -257px;
+}
+.sothich1{
+    color: blue;
+    margin-left: -364px;
+}
+.sothich2{
+    margin-left: -82px;
+    margin-top: -36px;
+}
+.sothich3{
+    margin-left: 143px;
+    margin-top: -36px;
+}
+.sothich4{
+    margin-left: -300px;
+    margin-top: 20px;
+}
+.sothich5{
+    margin-left: -69px;
+    margin-top: -36px;
+}
+.sothich6{
+    margin-left: 142px;
+    margin-top: -36px;
+}
+.sothich7{
+    margin-left: -316px;
+    margin-top: 20px;
+}
+#send{
+    margin-left: -232px;
+    margin-top: 20px;
+}

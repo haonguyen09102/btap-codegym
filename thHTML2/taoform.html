@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="taoform.css">
+    <title>tạo form</title>
+</head>
+<body>
+<p action="taoform">
+    <h1 class="order">Order Form</h1>
+    <h3 class="buy">what would you like to buy?</h3>
+    <select class="select" lenght="5" >
+        <option value="">A</option>
+        <option>B (+0.5)</option>
+        <option>C (+0.5)</option>
+    </select>
+    <h3 class="cost">How many would you like to order?</h3>
+    <input type="radio" name="mucgia" checked>1-$10<br>
+    <input type="radio" name="mucgia">2-$20<br>
+    <input type="radio" name="mucgia">3-$25<br> 
+    <h3 class="name">Name <span style="color: red;">*</span></h3>
+    <input type="text" name="first" value="FirstName" size="15">
+    <input type="text" name="last" value="LastName" size="15">
+    <h3 class="email">Email</h3>  
+    <input type="email" name="mail" value="nhap email" size="35">
+    <h3 class="text">Phone Number</h3>
+    <input type="text" name="phone1" size="5"> -
+    <input type="text" name="phone2" size="5"> -
+    <input type="text" name="phone3" size="5">
+    <p><input type="submit" name="submit" class="gui"></p>
+</form>
+</body>
+</html>
