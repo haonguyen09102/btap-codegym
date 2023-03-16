@@ -8,17 +8,34 @@
     <title>form dang ky</title>
 </head>
 <body>
+    <form>
     <div class="dangky">
         <b>Họ và tên:</b><br>
-        <input type="text" name=""><br></br>
+        <input type="text" name="ten"><br></br>
         <b>Email:</b><br>
-        <input type="text" name=""><br></br>
+        <input type="text" name="email"><br></br>
         <b>Số điện thoại:</b><br>
-        <input type="text" name=""><br></br>
+        <input type="tel" name="tele"><br></br>
         <b>Giới tính:</b><br>
         <input type="radio" name="gioitinh" checked>Nam<br>
         <input type="radio" name="gioitinh">Nữ<br></br>
-        <input type="button" name="" id="dk" value="Đăng ký">
+        <b>Giới tính:</b><br>
+        <input type="checkbox" name="like" id="">Bóng đá<br>
+        <input type="checkbox" name="like" id="">Chơi game<br>
+        <input type="checkbox" name="like" id="">Du lịch<br><br>
+        <b>Năm sinh:</b><br>
+        <input type="date" name="date" id=""><br><br>
+        <b>Nơi sinh:</b><br>
+        <select>
+            <option>Hà nội</option>
+            <option>Sài gòn</option>
+            <option>Đà Nẵng</option>
+        </select><br><br>
+        <b>Năng khiếu:</b><br>
+        <textarea name="cmt" id="cmt" cols="30" rows="5"></textarea><br><br>
+        <input type="submit" name="signup" id="dk" value="Đăng ký">
+        <input type="button" name="reset" id="nhaplai" value="Nhập lại">
     </div>
+</form>
 </body>
 </html>

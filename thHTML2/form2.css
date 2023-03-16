@@ -1,0 +1,132 @@
+.box{
+    width: 714px;
+    height: 420px;
+    background-color: rgb(255, 255, 15);
+    margin: auto;
+    margin-top: 20px;
+}
+
+.tittle{
+    width: 702px;
+    height: 38px;
+    background-color:aquamarine;
+    margin: auto;
+    margin-top: 5px;
+    color: rgb(57, 57, 240);
+    display: flex; 
+    justify-self: space-around;
+}
+/* ho va ten */
+h2{
+    margin-top: 4px;
+    margin-left: 2px;
+}
+.name{ 
+    margin-left: 8px;
+    margin-top: 10px;
+}
+.ten{
+    display: flex;
+}
+.nhapten{
+
+    color: rgb(14, 127, 220);
+    min-width: 130px;
+}
+.nhapten2{
+    flex: 0.5;
+}
+
+/* ngay sinh */
+.date{
+    margin-left: 8px;
+    margin-top: 20px;
+}
+
+.ngaysinh{
+    display: flex;
+}
+
+.nhapdate{
+    flex: 0.2;
+}
+
+/* giới tính */
+.gender{
+    margin-left: 8px;
+    margin-top: 20px;
+}
+.gioitinh{
+    display: flex;
+}
+.pick{
+    flex: 0.05  ;
+}
+
+/* địa chỉ */
+.address{
+    margin-left: 8px;
+    margin-top: 20px;
+}
+.diachi{
+    display: flex;
+}
+.nhapdiachi{
+    flex: 0.4;
+}
+/* lớp */
+.lop{
+    margin-left: 8px;
+    margin-top: 20px;
+}
+.clas{
+    display: flex;
+}
+.nhaplop{
+    flex: 0.2;
+   padding: 2px 0 2px 0;
+}
+
+/* mail */
+.email{
+    margin-left: 8px;
+    margin-top: 20px;
+}
+.mail{
+    display: flex;
+}
+.nhapmail{
+    flex: 0.32
+}
+/* số điện thoại */
+.tel{
+    margin-left: 8px;
+    margin-top: 20px;
+}
+.dienthoai{
+    display: flex;
+}
+.nhapso{
+    flex: 0.32;
+}
+
+/* submit */
+.gui{
+    margin-left: 8px;
+    margin-top: 20px;
+
+}
+.submit{
+    display: flex;
+    margin-left: 132px;
+}    
+.dangky{
+    flex: 0.14;
+    padding: 5px;
+    
+}
+.dangnhap{
+    margin-left: 5px;
+    flex: 0.14;
+
+}
