@@ -23,7 +23,12 @@
 
 //ngay-thang-nam
 // let x =prompt("ngay sinh: ");
+// let ngay = parseInt(x);
+// if(isNaN(ngay)){
+//     alert("ko phai so")
+// }
 // let y =prompt("thang sinh: ");
+// let thang = parseInt(y);
 // let z =prompt("nam sinh: ");
 // document.write(x + "-" + y + "-" + z);
 
@@ -32,51 +37,79 @@
 
 //chuvi-dt hinh tron
 // let x = prompt("ban kinh");
-// let y = 3.14;
+// let bankinh = parseFloat(x);
+// if (!isNaN(bankinh) && bankinh > 0) {
+//     alert("phu hop")
+    
+// } else {
+//     alert("so ko phu hop")
+//     prompt("nhap lai")     
+// }
+
+// let y = Math.PI;
+// let pi = parseFloat(y);
 // let c =2
-// document.write("chu vi hcn la: " + c*x*y);
+// document.write("chu vi hcn la: " + c*bankinh*pi.toFixed(1));
 // document.write("<br>")
-// document.write("dt hcn la: " + (x*x)*y);
+// document.write("dt hcn la: " + (bankinh*bankinh)*pi.toFixed(1));
 
 
 
 //lai suat ngan hang
 // let x = prompt("nhập sô tiền");
+// if(!isNaN(x) && x > 0){
+//     alert("so phu hop")
+// }
+// else{
+//     alert("so ko phu hop")
+// }
 // let y = prompt("lãi suất");
+// if(!isNaN(y) && y > 0){
+//     alert("so phu hop")
+// }
+// else{
+//     alert("so ko phu hop")
+// }
 // let z = prompt("số năm")
+// if(!isNaN(z) && z > 0){
+//     alert("so phu hop")
+// }
+// else{
+//     alert("so ko phu hop")
+// }
 // let tien = parseFloat(x);
 // let lai = parseFloat(y);
 // let nam = parseInt(z);
 // let ketqua = tien*(lai/100)
-// document.write("lãi suất sau 1 năm: " + ketqua + "tr");
+// document.write("lãi suất sau 1 năm: " + ketqua.toFixed(1) + "tr");
 // document.write("<br>");
-// document.write("cả gốc lẫn lãi sau " + z + " năm: " + (tien+nam*ketqua) + "tr");
+// document.write("cả gốc lẫn lãi sau " + z + " năm: " + (tien+nam*ketqua.toFixed(1)) + "tr");
 
 
 
 
 //in buc thu
-let x = prompt("ten nguoi nhan:");
-console.log(x);
-let y = prompt("dia diem");
-console.log(y);
-let dd = prompt("ngay");
-let mm = prompt("thang");
-let yy = prompt("nam");
-console.log("ngày"+ dd + "tháng" + mm + "năm" + yy);
-document.write("“Joe thương nhớ,")
-document.write("<br>");
-document.write("<br>");
-document.write("Em không biết phải nói sao để anh hiểu rằng, em nhớ anh thật nhiều. Em yêu anh đến khi trái tim này tan thành nghìn mảnh. Tất cả những gì em yêu thương, em khát khao và cần đến, chính là anh, mãi mãi về sau. Em chỉ muốn ở bên anh, và anh yêu hỡi, em sẽ trở thành người phụ nữ như anh mong muốn.");
-document.write("<br>");
-document.write("<br>");
-document.write("Có phải em thật tệ hại, khi cứ nghĩ đến anh thật nhiều, thật lâu và nhất là mỗi khi đêm xuống? Em hứa sẽ sẽ cố gắng triệu triệu lần hơn thế. Nhưng hơn tất cả, em chỉ mong một ngày nào đó, anh sẽ tự hào về em, như tự hào về vợ của anh, và mẹ của các con anh (ít nhất là 2 nhé, em vừa mới quyết định đấy!). Em nhớ thật nhiều cảm giác mỗi đêm anh ôm em và ru em ngủ trong vòng tay. Đêm nay, em chỉ muốn được gần bên anh… và anh biết không, trái tim em đang đau đớn đến nhường nào.");
-document.write("<br>");
-document.write("<br>");
-document.write("Anh yêu thương, đừng bao giờ rời xa em nữa nhé. Yêu anh rất nhiều.");
-document.write("<br>");
-document.write("<br>");
-document.write("Los Angeles, ngày 10 tháng 10 năm 1951.”");
+// let x = prompt("ten nguoi nhan:");
+// console.log(x);
+// let y = prompt("dia diem");
+// console.log(y);
+// let dd = prompt("ngay");
+// let mm = prompt("thang");
+// let yy = prompt("nam");
+// console.log("ngày"+ dd + "tháng" + mm + "năm" + yy);
+// document.write("“Joe thương nhớ,")
+// document.write("<br>");
+// document.write("<br>");
+// document.write("Em không biết phải nói sao để anh hiểu rằng, em nhớ anh thật nhiều. Em yêu anh đến khi trái tim này tan thành nghìn mảnh. Tất cả những gì em yêu thương, em khát khao và cần đến, chính là anh, mãi mãi về sau. Em chỉ muốn ở bên anh, và anh yêu hỡi, em sẽ trở thành người phụ nữ như anh mong muốn.");
+// document.write("<br>");
+// document.write("<br>");
+// document.write("Có phải em thật tệ hại, khi cứ nghĩ đến anh thật nhiều, thật lâu và nhất là mỗi khi đêm xuống? Em hứa sẽ sẽ cố gắng triệu triệu lần hơn thế. Nhưng hơn tất cả, em chỉ mong một ngày nào đó, anh sẽ tự hào về em, như tự hào về vợ của anh, và mẹ của các con anh (ít nhất là 2 nhé, em vừa mới quyết định đấy!). Em nhớ thật nhiều cảm giác mỗi đêm anh ôm em và ru em ngủ trong vòng tay. Đêm nay, em chỉ muốn được gần bên anh… và anh biết không, trái tim em đang đau đớn đến nhường nào.");
+// document.write("<br>");
+// document.write("<br>");
+// document.write("Anh yêu thương, đừng bao giờ rời xa em nữa nhé. Yêu anh rất nhiều.");
+// document.write("<br>");
+// document.write("<br>");
+// document.write("Los Angeles, ngày 10 tháng 10 năm 1951.”");
 
 
 
