@@ -108,13 +108,13 @@
 
 
         //tính năm nhuận
-        function check(){
-            let soNam = document.getElementById("nhapnam").value;
-            soNam = parseInt(soNam);
-            if(soNam %4 === 0){ //&& soNam %100 === 0 && soNam %400 === 0){
-                alert("năm " + soNam + " là năm nhuận")
-            } else{
-                //soNam %100 === 0 && soNam %!400 === 0
-                alert("năm " + soNam + " không là năm nhuận")
-            }
-        }
+        // function check(){
+        //     let soNam = document.getElementById("nhapnam").value;
+        //     soNam = parseInt(soNam);
+        //     if(soNam %4 === 0){ //&& soNam %100 === 0 && soNam %400 === 0){
+        //         alert("năm " + soNam + " là năm nhuận")
+        //     } else{
+        //         //soNam %100 === 0 && soNam %!400 === 0
+        //         alert("năm " + soNam + " không là năm nhuận")
+        //     }
+        // }

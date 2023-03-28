@@ -125,22 +125,30 @@
 // document.write("adding a line")
 
 //BMI
-// let heightInput = document.getElementById("height");
-// let weightInput = document.getElementById("weight");
-// let calInput = document.getElementById("cal");
-// let weight , height
-
-// heightInput.addEventListener("change", function(e){
-//     height = e.target.value;
-//     height = parseFloat(height);
-//     console.log(height);
-// })
-// weightInput.addEventListener("change", function(e){
-//     weight = e.target.value;
-//     weight = parseFloat(weight);
-//     console.log(weight);
-// })
-// calInput.addEventListener("click", function(){
-//     let BMI = weight / (height*height);
-//     console.log("BMI: " + BMI);
-// })
+function cal(){
+    let heightInput = parseFloat(document.getElementById("height").value);
+    let weightInput = parseFloat(document.getElementById("weight").value);
+    
+    
+    if(!isNaN(heightInput) && !isNaN(weightInput) && heightInput >0 && weightInput > 0){
+        let bmi = weightInput / (heightInput * heightInput).toFixed(2);
+    
+        let ketLuan = null;
+        if(bmi > 40){
+            ketLuan = "beo phi cap do 3"
+        } else if(35 <= bmi < 40){
+            ketLuan = "beo phi cap do 2"
+        } else if(30 <= BMI < 35){
+            ketLuan = "beo phi cap do 1"
+        } else if(25 <= BMI < 30){
+            ketLuan = "thua can"
+        } else if(18.5 <= BMI < 25){
+            ketLuan = "binh thuong"
+        } 
+        else{
+        chuoi ="nhap ko hop le";
+    }
+    document.getElementById("ketQua").innerHTML = "BMI: " + bmi;
+    document.getElementById("ketLuan").innerHTML = "ket luan: " + ketLuan;
+}
+}

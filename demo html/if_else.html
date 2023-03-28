@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <!-- tinh diem khoi D -->
+        <!-- <h2>Tính điểm ĐH khối D</h2>
+        <table>
+            <tr>
+                <td>Môn Toán</td>
+                <td>
+                    <input id="diemToan" type="number" />
+                </td>
+            </tr>
+            <tr>
+                <td>Môn Văn</td>
+                <td>
+                    <input id="diemVan" type="number" />
+                </td>
+            </tr>
+            <tr>
+                <td>Môn Anh</td>
+                <td>
+                    <input id="diemAnh" type="number" />
+                </td>
+            </tr>
+            <tr>
+                <td>Khu vực</td>
+                <td>
+                    <select id="khuVuc">
+                        <option value="KV1">Khu vực 1</option>
+                        <option value="KV2">Khu vực 2</option>
+                        <option value="KV2-NT">Khu vực 2 nông thôn</option>
+                        <option value="KV3">Khu vực 3</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button type="button" onclick="tinhDiem()">Tính điểm</button>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div id="ketQua"></div>
+                </td>
+            </tr>
+        </table>
+    </form> -->
+
+
+
+    <!-- tinhgia hoa qua -->
+    <!-- <h2>giá hoa quả</h2>
+    <input type="text" id="ten">
+    <button type="button" onclick="traCuu()">tra cứu</button>
+    <h3 id="ketQua"></h3>
+     -->
+    
+
+
+
+    <script>
+    //    function traCuu(){
+    //     let tuKhoa = document.getElementById("ten").value.toLowerCase();
+        
+    //     let ketQua = "";
+    //     switch(tuKhoa){
+    //         case "ổi" : ketQua = "Ổi 2000"; break;
+    //         case "măng cụt" : ketQua = "măng cụt 4000"; break;
+    //     }
+    //     document.getElementById("ketQua").innerHTML = ketQua
+    //    }
+
+
+
+
+
+
+        // let name = prompt("what is your name?");
+        // if(name === ""){
+        //     alert("not in put");
+        // }else if(name === "ECMA"){
+        //     alert("right");
+        // }else{
+        //     alert("wrong")
+        // }
+
+        
+        //nhap tai khoan,mat khau
+        // let name= prompt("Who's there?");
+        // if(name === "Admin"){
+        //     let mk = prompt("pass word?");
+        //     if(mk === "theMaster"){
+        //     alert("right");
+        //     } else if(mk === null){
+        //     alert("cancel");
+        //     } else{
+        //     alert("wrong");
+        //     }
+        // }else if(name === null){
+        //     alert("canceled");
+        // } else{
+        //     alert("i dont know u");
+        // }
+        
+
+
+        //tinh diem khoi D
+        // function tinhDiem() {
+        //     let toan = parseFloat(document.getElementById("diemToan").value);
+        //     let van = parseFloat(document.getElementById("diemVan").value);
+        //     let anh = parseFloat(document.getElementById("diemAnh").value);
+        //     let khuVuc = document.getElementById("khuVuc").value;
+
+        //     let diemCong = 0;
+        //     if (khuVuc === "KV1") {
+        //         diemCong = 0.75;
+        //     } else if (khuVuc === "KV2-NT") {
+        //         diemCong = 0.5;
+        //     } else if (khuVuc === "KV2") {
+        //         diemCong = 0.25;
+        //     }
+
+        //     let tongDiem = toan + van + anh + diemCong;
+        //     document.getElementById("ketQua").innerHTML = "Tổng điểm ĐH khối D của bạn là: " + tongDiem;
+        // }
+
+
+
+        //nam am lich
+        let namDuongLich = parseInt(prompt("Nhập năm dương lịch"));
+
+    
+        let namAmLich =parseInt("");
+        switch (namDuongLich % 10) {
+            case 0: namAmLich = "Canh"; break;
+            case 1: namAmLich = "Tân"; break;
+            case 2: namAmLich = "nhâm"; break;
+            case 3: namAmLich = "quý"; break;
+            case 4: namAmLich = "giáp"; break;
+            case 5: namAmLich = "ất"; break;
+            case 7: namAmLich = "bính"; break;
+            case 8: namAmLich = "đinh"; break;
+            case 9: namAmLich = "mậu"; break;
+            case 10: namAmLich = "kỉ"; break;
+        }
+        switch (namDuongLich % 12) {
+            case 0: namAmLich += " Thân"; break;
+            case 1: namAmLich += " Dậu"; break;
+            case 2: namAmLich += " tuất"; break;
+            case 3: namAmLich += " hợi"; break;
+            case 4: namAmLich += " tí"; break;
+            case 5: namAmLich += " sửu"; break;
+            case 6: namAmLich += " dần"; break;
+            case 7: namAmLich += " mẽo"; break;
+            case 8: namAmLich += " thìn"; break;
+            case 9: namAmLich += " tị"; break;
+            case 10: namAmLich += " ngọ"; break;
+            case 11: namAmLich += " mùi"; break;
+        }
+        alert(`${namDuongLich} ==> ${namAmLich}`)
+
+    </script>
+</body>
+</html>
