@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- cửu chương -->
+    <!-- <input type="number" id="so">
+    <input type="button" onclick="xuLy()" value="In cửu chương">
+    <div id="ketQua"></div> -->
+
+
+    <!-- hiển thị the number
+    <input type="number" id="nhapSo">
+    <input type="button" onclick="inSo()" value="IN">
+    <div id="ketQua"></div> -->
+
+
+    <!-- trò chơi đoán số -->
+    <!-- <h2>trò chơi đoán số</h2>
+    <input type="button" onclick="thucHienChoi()" value="chơi">
+    <div id="ketQua"></div> -->
+
+
+
+    <!-- bang cuu chuong -->
+    <!-- <div id="main"></div> -->
+
+
+
+
+
+    <script>
+    //     function xuLy(){
+    //         let cuuChuong = parseInt(document.getElementById("so").value);
+    //         let chuoi = ""
+    //     for(let i = 1; i <br 11; i++ ){
+    //         chuoi += `${cuuChuong} x ${i} = ${cuuChuong*i}</br>`
+    //     }
+
+    //     document.getElementById("ketQua").innerHTML = chuoi
+    // }
+
+
+// let myInput = "Hello"
+// while(myInput !== "Q"){
+//     myInput = prompt("nhấn 'Q' dể dừng lại");
+//     document.write(myInput + "</br>");
+// }
+
+
+
+// let n = 1;
+// let demChia21 = 0
+// while(true){
+//     if(n % 3 === 0 || n % 7 === 0){
+//         document.write(n + "/br");
+//     }
+//     if(n % 21 === 0){
+//         demChia21++;
+//     }
+//     if(demChia21 == 2){
+//         break;
+//     }
+// }
+
+
+
+// hiển thị the number is:
+// function inSo(){
+//     let nhapSo = parseInt(document.getElementById("nhapSo").value);
+//     let kq = "";
+//     for(let i=0; i<=nhapSo; i++){
+//         kq += `the number is: ${i}<br>`;
+//     }
+//     document.getElementById("ketQua").innerHTML = kq
+    
+// }
+
+
+
+// trò chơi đoán số
+// function thucHienChoi() {
+//             let maxNumber = parseInt(prompt("Nhập số muốn đoán lớn nhất:"));
+
+//             let randomNumber = Math.random(maxNumber);
+//             let dem = 0;
+//             do {
+//                 let guessNumber = parseInt(prompt("Nhập số muốn đoán:"));
+//                 dem++;
+//                 if (guessNumber === randomNumber) {
+//                     alert("Chúc mừng bạn đoán đúng");
+//                     break;
+//                 } else {
+//                     alert("Sai rồi! " + (dem < 3 ? "Thử lại nào" : ""));
+//                 }
+//             } while (dem < 3);
+//         }
+
+
+
+// bảng cửu chương
+// let myTable = document.createElement("table");
+// myTable.border = 1;
+// myTable.cellSpacing = 0;
+// myTable.cellPadding = 5;
+// document.getElementById("main").appendChild(myTable);
+// for(let i =1; i<11; i++){
+//     let row = document.createElement("tr");
+//     for(let e =2; e<10; e++){
+//         let col = document.createElement("td");
+//         col.innerHTML = `${e} x ${i} = ${e*i}`;
+//         row.appendChild(col);
+//     }
+//     myTable.appendChild(row);
+// }
+// document.getElementById("main").appendChild(myTable);
+
+
+// in ngoi sao
+// hinh1
+// for(let i =1; i<6; i++){
+//     for(let j =1;j<=i;j++){
+//         document.write("*");
+//     }
+//     document.write("<br>");
+// }
+
+
+// hinh2
+// for(let i =5; i>0; i--){
+//     for(let j =1;j<=i;j++){
+//         document.write("*");
+//     }
+//     document.write("<br>");
+// }
+
+
+// hinh3
+// document.write("<div style = 'text-align:right;'>");
+// for(let i =1; i<6; i++){
+//     for(let j =1;j<=i;j++){
+//         document.write("*");
+//     }
+//     document.write("<br>");
+// }
+// document.write("</div>")
+
+
+
+// tong cac so trong mot khoang
+// let a = parseInt(prompt("nhap so a:"));
+// let b = parseInt(prompt("nhap so b:"));
+
+// let tong = 0;
+// for(let i = a+1; i<b; i++){
+//     tong += i
+// }
+// alert(tong);
+
+
+
+// hien thi cac so nguyen to
+// let nhap = parseInt(prompt("nhap so nguyen to:"));
+
+// function soNguyenTo(soNguyen){
+//     if(soNguyen<2){
+//         return false;
+//     }
+//     for(let i=2; i<soNguyen; i++){
+//         if(soNguyen % i == 0){
+//             return false;
+//         }
+//     }
+//     return true;
+// }
+
+// let count = 0;
+// let n = 2;
+// while(count < numbers){
+//     if(soNguyenTo(n)){
+//         document.write(n + "");
+//         count++;
+//     }
+//     n++
+// }
+
+
+
+// day fibo
+function generateFibo(n){
+    if(n==1 || n==2){
+        return 1;
+    }
+     return generateFibo(n - 1) + generateFibo(n-2);
+}
+const n = 20
+for(let i =1; i<n; i++){
+    document.write(generateFibo(i) + "; ")
+}
+
+
+
+
+    </script>
+</body>
+</html>

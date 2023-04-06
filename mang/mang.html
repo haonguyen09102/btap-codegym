@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<form>
+    <!-- hien thi mang -->
+    <!-- <input type="text" id="nhap">
+    <input type="button" onclick="addItem()" value="add">
+    <input type="button" onclick="display()" value="Display">
+    <div id="ketQua"></div> -->
+</form>
+
+    <script>
+        // hien thi mang
+        // let mang =[];
+
+        // function display(){
+        //     let kq ="";
+        //     for(let index in mang){
+        //         kq += `element ${index} = ${mang[index]} <br>`;
+        //     }
+        //     document.getElementById("ketQua").innerHTML = kq;
+        // }
+
+        // function addItem(){
+        //     let nhap = document.getElementById("nhap");
+        //     if(nhap.value !== ""){
+        //     mang.push(nhap.value);
+        //     alert("element: " + mang[mang.length - 1] + " added at index " + (mang.length - 1));
+        //     nhap.value =""
+        //     nhap.focus();
+        //     }
+        // }
+
+
+
+        // timgiatritrongmang,min-max
+        // function getRandomArbitrary(min,max){
+        //     return Math.floor(Math.random() * (max - min) + min)
+        // }   
+
+        // let n = parseInt(prompt("mang co bao nhieu phan tu"));
+
+        // let giatritim = parseInt(prompt("can tim"));
+
+        // let mang =[];
+        // for(let i=0; i<n; i++){
+        //     mang.push(getRandomArbitrary(1, 55))
+        // }
+
+        // alert("mang: " + mang.join(", "));
+
+        // let viTri =[];
+        // for(let idx in mang){
+        //     if(mang[idx] === giatritim){
+        //         viTri.push(idx);
+        //     }
+        // }
+        // if(viTri.length >0){
+        //     alert(`tim that ${giatritim} tai vi tri ${viTri}`);
+        // } else{
+        //     alert(`ko tim thay ${giatritim} trong mang`);
+        // }
+
+        // let min = mang[0];
+        // let max = mang[0];
+        // for(let idx =1; idx< mang.length; idx++){
+        //     if(mang[idx] < min){
+        //         min = mang[idx];
+        //     }
+        //     if(mang[idx] > max){
+        //         max = mang[idx];
+        //     }
+        // }
+        // alert(`gia tri lon nhat ${max}, gia tri nho nhat ${min}`);
+
+
+
+        // dao nguoc cac phan tu
+        // let x = [3,5,7,9];
+
+        // let first = 0;
+        // let last = x.length -1;
+
+        // while(first < last){
+        //     let b = x[first];
+        //     x[first] = x[last];
+        //     x[last] = b;
+        //     first++;
+        //     last--;
+        // }
+        // document.write(x);
+
+
+        // b1
+        let mang =["red", "green", "blue", "black"];
+        mang.join("","");
+        document.write(mang);
+
+
+        // b2
+        let num=window.prompt();
+        let result = [str[0]];
+        
+        for(let x=1; x<str.length; x++)
+        {
+            if((str[x-1]%2 === 0)&&(str[x]%2 === 0))
+            {
+            result.push('-', str[x]);
+            }
+            else
+            {
+            result.push(str[x]);
+            }
+        }
+        alert(result.join(''));
+    </script>
+</body>
+</html>
