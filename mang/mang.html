@@ -13,9 +13,55 @@
     <input type="button" onclick="addItem()" value="add">
     <input type="button" onclick="display()" value="Display">
     <div id="ketQua"></div> -->
+
+
+
+    <!-- caro -->
+    <div id="banco"></div>
+    <input type="button" onclick="change()" value="change value">
+    <style>
+        .cell{ border: 1px;}
+    </style>
 </form>
 
     <script>
+        // caro
+        const n = 7;
+        const m = 7;
+         let board =[];
+         for(let i =0; i<n; i++){
+            board[i] = [];
+            for(let k =0; k< m; k++){
+                board[i].push(".");
+            }
+
+         }
+         function display(){
+            let data = "";
+            for(let i =0; i<n; i++){
+                for(let j =0; j< m; j++){
+                    data += '<class=cell span></class=cell>' + board[i][j] + "&nbsp;&nbsp;"
+                }
+                data += '<br>'
+         }
+            document.getElementById("banco").innerHTML = data;
+         }
+
+         display();
+
+        // function change(){
+        //     let viTriX = parseInt(prompt("vi tri theo truc x"));
+        //     let viTriY = parseInt(prompt("vi tri theo truc y"));
+        //     if(viTriX > -1 && viTriY >-1 && viTriX < m && viTriY <n){
+        //     board[viTriX][viTriY] = "X";
+        //     display();
+        //     }
+
+        // }
+
+
+
+
         // hien thi mang
         // let mang =[];
 
@@ -83,6 +129,8 @@
 
         // dao nguoc cac phan tu
         // let x = [3,5,7,9];
+        // let dao = x.reverse();
+        // document.write(dao);
 
         // let first = 0;
         // let last = x.length -1;
@@ -98,27 +146,68 @@
 
 
         // b1
-        let mang =["red", "green", "blue", "black"];
-        mang.join("","");
-        document.write(mang);
+        // let mang =["red", "green", "blue", "black"];
+        // mang.join(",");
+        // document.write(mang);
 
 
-        // b2
-        let num=window.prompt();
-        let result = [str[0]];
+        //b2
+        // let chuoiSo = prompt("nhap so");
+        // let tmp = [];
+        // for(let idx = 0; idx<chuoiSo.length; idx++){
+        //     tmp.push(chuoiSo[idx]);
+        //     if(chuoiSo[idx] %2 ==0 && chuoiSo[idx+1] %2 ==0){
+        //         tmp.push("-");
+        //     }
+        // }
+        // alert(tmp.join(""));
+
+
+        // b3
+        // let chuoi = prompt("nhap chuoi:");
+
+        // function isUpperCase(string){
+        //     return string.toUpperCase() === string;
+        // }
+
+        // function isLowerCase(string){
+        //     return string.toLowerCase() === string;
+        // }
+
+        // let mang = [];
+        // for(let i = 0; i<chuoi.length;i++){
+        //     mang.push(chuoi[i]);
+        //     if(isUpperCase(chuoi[i])){
+        //         mang.push(chuoi[i].toLowerCase());
+        //     } else{
+        //         mang.push(chuoi[i].toUpperCase());
+        //     }
+        // }
+        // alert(mang.join(""));
+
         
-        for(let x=1; x<str.length; x++)
-        {
-            if((str[x-1]%2 === 0)&&(str[x]%2 === 0))
-            {
-            result.push('-', str[x]);
-            }
-            else
-            {
-            result.push(str[x]);
-            }
-        }
-        alert(result.join(''));
+
+
+        // let soDong = parseInt(prompt("nhap so dong"));
+        // let soCot = parseInt(prompt("nhap so cot"));
+        
+        // let mang2Chieu = new Array(soDong)
+        // for(let index in mang2Chieu){
+        //     mang2Chieu[index] = new Array(soCot);
+        // }
+        // console.log("mang 2 chieu:", mang2Chieu );
+
+        // for(let iDong =0 ;iDong < mang2Chieu.length; iDong++){
+        //     for(let iCot = 0; iCot < soCot; iCot++){
+        //         mang2Chieu[iDong],[iCot] = Math.random() * 101;
+        //     }
+        // }
+
+
+
+
+        
+
     </script>
 </body>
 </html>
