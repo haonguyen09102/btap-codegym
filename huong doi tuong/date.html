@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class myDate{
+            constructor(day, month, year){
+                this.day = day;
+                this.month = month;
+                this.year = year;
+            }
+            getday(){
+            return this.day;
+            }
+            getmonth(){
+                return this.month;
+            }
+            getyear(){
+                return this.year;
+            }
+        }
+         let date = new myDate( 09, 10, 2002)
+         let ngay = date.getday();
+         let thang = date.getmonth();
+         let nam = date.getyear();
+         console.log(`ngay ${ngay} thang ${thang} nam ${nam}`);
+        
+
+    </script>
+</body>
+</html>
