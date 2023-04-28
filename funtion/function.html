@@ -7,7 +7,108 @@
     <title>Document</title>
 </head>
 <body>
-    <script>
+    <div>
+        <h2>Add New Product</h2>
+        <input id="tenSanPham" placeholder="New Product" />
+        <button type="button" class="mybutton" onclick="themSanPham()">Add</button>
+    </div>
+    <div>
+        <h2>Display All Product</h2>
+        <div><span id="tongSoSp">0</span> products</div>
+        <div id="danhSachSanPham">
+            <div>
+                <span class="tensp"></span>
+                <button type="button" class="mybutton">Edit</button>
+                <button type="button" class="mybutton">Delete</button>
+            </div>
+        </div>
+    </div>
+
+    <script> 
+        // quanlysanpham
+        let dsSanPham = [
+            {
+                id: uuid(),
+                name: 'iphone 14'
+            },
+            {
+                id: uuid(),
+                name: 'samsung',
+            }
+            
+
+        ];
+        document.getElementById("tongSoSp").innerHTML = dsSanPham.length;
+
+        function uuid() {
+        var temp_url = URL.createObjectURL(new Blob());
+        var uuid = temp_url.toString();
+        URL.revokeObjectURL(temp_url);
+        return uuid.substr(uuid.lastIndexOf('/') + 1); 
+    }   
+
+        function themSanPham() {
+            let tenSp = document.getElementById("tenSanPham").value.trim();
+            if (tenSp !== '') {
+                let newObj ={
+                    id: uuid(),
+                    name: tenSp
+                };
+                dsSanPham.push(newObj);
+                console.log(dsSanPham);
+                document.getElementById("tenSanPham").value = '';
+                document.getElementById('tongSoSp').innerHTML = dsSanPham.length;
+                displayOneProduct(tenSp.length, tenSp.name);
+            }
+        }
+        function findProductById(myuuid){
+            let idxFound = -1;
+            for(let item in dsSanPham){
+                if(dsSanPham[idxItem].id === myuuid){
+                    return idxItem;
+                }
+            }
+            return -1;
+        }
+
+
+        function displayOneProduct(idx, productName) {
+            let myDiv = document.createElement("div");
+            myDiv.id = idx
+            let mySpan = document.createElement("span");
+            mySpan.innerHTML = productName;
+            myDiv.appendChild(mySpan);
+
+            let editBtn = document.createElement("button");
+            editBtn.innerHTML = "Edit";
+            editBtn.className = "mybutton";
+            myDiv.appendChild(editBtn);
+
+            let deleteBtn = document.createElement("button");
+            deleteBtn.innerHTML = "Delete";
+            deleteBtn.className = "mybutton";
+            deleteBtn.onclick = function(){
+                myDiv.remove();
+                 dsSanPham.splice(findProductById(idx), 1);
+                console.log(dsSanPham);
+                document
+            }
+            myDiv.appendChild(deleteBtn);
+
+            document.getElementById("danhSachSanPham").appendChild(myDiv);
+        }
+
+        function display() {
+            for (let idx in dsSanPham) {
+                displayOneProduct( dsSanPham[idx].id,dsSanPham[idx].name);
+            }
+        }
+        display();
+
+
+
+
+
         // định nghĩa hàm
         // function tinhDT(dai,rong =1){
         //     return dai*rong
@@ -74,10 +175,88 @@
 
 
         // bt3
-        function binhPhuong(giaTri){
-            return giaTri * giaTri
-        }
-        console.log(binhPhuong(9));
+        // function binhPhuong(giaTri){
+        //     return giaTri * giaTri
+        // }
+        // console.log(binhPhuong(9));
+
+
+
+        // bt4
+        // function DT(banKinh){
+        //     return banKinh*banKinh*Math.PI.toFixed(2);
+        // }
+
+        // function chuVi(banKinh){
+        //     return 2*banKinh*Math.PI.toFixed(2);
+        // }
+        // let banKinh = prompt("nhap ban kinh");
+        // console.log(`DT = ${DT(banKinh)}`);
+        // console.log(`chu vi = ${chuVi(banKinh)}`);\
+
+
+        // bt6
+        // let kyTu = prompt("nhap ky tu");
+        // function laSo(ch){
+        //     return !isNaN(ch);
+        // }
+        // console.log(`${kyTu} là ký tự số: ${laSo(kyTu)}`);
+
+
+        // bt7
+        // let array = [5, 4, 7, 2, 8, 12, 7, 3];
+
+        // array.sort(function(a, b) {
+        // return b-a;
+        // });
+
+        // console.log("max= ",array[0]);
+        // console.log("min= ",array[array.length-1]);
+
+
+        // bt9
+        // function daoMang(arr){
+        //     if(arr.length === 0){
+        //         return [];
+        //     } else{
+        //         let left = 0, right= arr.length -1;
+        //         while(left < right){
+        //             let swap = arr[left];
+        //             arr[left] = arr[right];
+        //             arr[right] = swap;
+        //             left++;
+        //             right--;
+        //         }
+        //     }
+        //     return arr;
+        // }
+        // let myArr = [2,6,423,75,4];
+        // alert(daoMang(myArr))
+
+
+        // bt10
+        // function count_element_in_array(array, x){
+        //     let count = 0;
+        //     for(let i=0;i<array.length;i++){
+        //     if(array[i]==x) 
+        //         count ++;
+        //     }
+        //     console.log( "Phan tu " +  x  + " xuat hien " + count +  " lan");
+        // }
+
+        // let array = [ "a", "b", "c", "a"];
+
+        // count_element_in_array(array, "a");
+
+
+        
+
+
+
+
+        
+        
+
     </script>
 </body>
 </html>

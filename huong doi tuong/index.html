@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h2 id="dongHo">00:00:00</h2>
+    <input type="button" id="start" onclick="handleStart()" value="START">
+    <input type="button" id="lap" value="LAP">
+    <input type="button" id="stop" onclick="handleStop()" value="STOP"> -->
+
+
+    <!-- <canvas id="myCanvas" width="800" height="600" style="border: 1px solid blue;"></canvas> -->
+    <script>
+        //lớp hcn
+        // let canvas = document.getElementById("myCanvas");
+
+        // let ctx = canvas.getContext("2d");
+
+        // class hcn{
+        //     constructor( x, y){
+        //         this.dai = x;
+        //         this.rong = y;
+        //     }
+        //     getDT(){
+        //         return this.dai * this.rong
+        //     }
+        //     getChuVi(){
+        //         return (this.dai + this.rong) * 2
+        //     }
+        //     getDai(){
+        //         return this.dai
+        //     }
+        //     getRong(){
+        //         return this.rong
+        //     }
+        //     ve(){
+        //         ctx.beginPath();
+        //         ctx.fillStyle = "yellow"
+        //         ctx.fillRect(0,0, this.dai, this.rong)
+                
+        //     }
+        // }
+        // let Hcn = new hcn(200, 150);
+        // let dai = Hcn.getDai();
+        // let rong = Hcn.getRong();
+        // let DT = Hcn.getDT();
+        // let chuVi = Hcn.getChuVi();
+        // let h1 = Hcn.ve();
+        // console.log(`hcn có chiều dài là: ${dai} và chiều rộng là: ${rong} chu vi: ${chuVi} DT: ${DT}`);
+
+
+
+        //đồng hồ bấm h
+        // let myInterval = null;
+        // let btnStart = document.getElementById("start");
+        // let btnLap = document.getElementById("lap");
+        // let btnStop = document.getElementById("stop");
+        // let dongHo = document.getElementById("dongHo")
+        
+        // let startTime = null;
+
+        // function setRunning(value){
+        //     btnStart.disabled = value;
+        //     btnStop.disabled = !value;
+        //     btnLap.disabled = value;
+
+        // }
+
+        // function handleStart(){
+           
+        //     setRunning(true);
+        //     myInterval = setInterval(displayTime, 100);
+        // }
+
+        // function displayTime(){
+        //     let timeDistance = new Date(new Date() - startTime);
+        //     dongHo.innerHTML = timeDistance.getHours() + ':' + timeDistance.getMinutes() + ':' + timeDistance.getSeconds() + ':' + timeDistance.getMilliseconds();
+        // }
+
+        // function handleStop(){
+        //     clearInterval(myInterval);
+        //     setRunning(false);
+        // }
+
+
+        // class xeHoi {
+        //     constructor(ten, nam){
+        //         this.Ten = ten;
+        //         this.Nam = nam;
+        //     }
+
+        //     soNamSuDung(){
+        //         return new Date().getFullYear() - this.Nam;
+        //     }
+
+        // }
+
+        // let xh1 = new xeHoi("mer", 2020);
+        // console.log(xh1);
+        // console.log('xe da su dung', xh1.soNamSuDung());
+
+
+        //lớp hình tròn
+        // class circle {
+        //     constructor(radius,color){
+        //         this.radius = parseInt(radius);
+        //         this.color = color;
+        //     }
+        //     getRadius(){
+        //         return this.radius
+        //     }
+        //     getArea(){
+        //         return Math.pow(this.radius, 2) * Math.PI;
+        //     }
+            
+        // }
+
+        // let tron = new circle(5)
+        // let radius = tron.getRadius();
+        // let area = tron.getArea();
+        // console.log("radius: " + radius + "; area: " + area);
+
+        
+    </script>
+</body>
+</html>
